@@ -87,6 +87,7 @@ ny_smooth=sqrt(1-nx_smooth.^2).*sign(Qxy_norm);
 nx=nx_smooth;
 ny=ny_smooth;
 
+
 % find defects, see help on func_defectfind_20190630() for details
 params.N_window=10;         %size of loop integral
 params.defectthresh=0.15;   %charge threshold, plot the "map" to get an idea of what a good value is for other images
@@ -108,7 +109,17 @@ colorbar
 hold on
 colorbar
 
-h_slice=streamslice(nx,ny,12,'noarrows');
+% to help with plotting, throw out regions where {nx,ny} flips to {-nx,-ny}
+theta2=atan2(ny,nx);
+[theta_x,theta_y]=gradient(theta2);
+theta_grad_mag=theta_x.^2+theta_y.^2;
+nx_plot=nx;
+ny_plot=ny;
+nx_plot(theta_grad_mag>0.05)=NaN;
+ny_plot(theta_grad_mag>0.05)=NaN;
+
+
+h_slice=streamslice(nx_plot,ny_plot,12,'noarrows');
 set(h_slice,'Color','k','LineWidth',1);
 
 % plot defects
