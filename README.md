@@ -9,5 +9,5 @@ Files:
 5. sampleframe         :  data used in example
 
 Acknowledgements:
-This research was conducted by Michael M. Norton (https://www.mmnorton.com) at Brandeis University, Waltham, Massachusetts USA in Seth Fraden's Lab (https://www.fradenlab.com/) where it was supported by the NSF MRSEC-1420382. Sample data was acquired by Linnea Lemma @ U.S. Santa Barbara (Zvonimir Dogic Lab http://dogiclab.physics.ucsb.edu/) and is featured in the work: Zhou et al., "Machine learning forecasting of active nematics," Soft Matter 2020 (https://pubs.rsc.org/en/content/articlelanding/2020/sm/d0sm01316a/)
+This research was conducted by Michael M. Norton (https://www.mmnorton.com) at Brandeis University, Waltham, Massachusetts USA in Seth Fraden's Lab (https://www.fradenlab.com/) where it was supported by the NSF MRSEC-1420382. Sample data was acquired by Linnea Lemma @ U.C. Santa Barbara (Zvonimir Dogic Lab http://dogiclab.physics.ucsb.edu/) and is featured in the work: Zhou et al., "Machine learning forecasting of active nematics," Soft Matter 2020 (https://pubs.rsc.org/en/content/articlelanding/2020/sm/d0sm01316a/)
 
